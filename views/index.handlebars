@@ -1,0 +1,43 @@
+<div class="parent">
+  <h1>Eat-Da-Burger</h1>
+<div class="flex-container"></div>
+
+  <div class="flex-container">
+<ul class="flex-item">
+    {{#each burgers}}
+    {{#unless devoured}}
+  	<li>
+<span class="label"><b>Burger Name:</b>  {{this.burger_name}} </span>
+      <button class="devour btn" data-id={{this.id}}>Devour</button>
+  	</li>
+    {{/unless}}
+  {{/each}}
+
+  </ul>
+  <div class="flex-item">
+    <div class="flex-container1">
+      <div class ="flex-column">
+        <img src="pictures/burger.png">
+      </div>
+      <div class ="flex-column">
+            <b>Create a new burger</b>
+            <div class="input-wrapper">
+              <input type="text" id="burgerName">
+              <button id="burgerButton" class="btn">Submit</button>
+            </div>
+      </div>
+    </div>
+  </div>
+  <ul class="flex-item">
+  {{#each burgers}}
+    {{#if devoured}}
+  	<li>
+      <span class="label"><b>Burger Name:</b>  </span><span class="strike">{{this.burger_name}}</span>  
+      <button class="delete btn" data-id={{this.id}}>Delete</button>
+      <button class="purge btn" data-id={{this.id}}>Un-Devour</button>
+  	</li>
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+</div>

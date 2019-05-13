@@ -1,0 +1,66 @@
+.parent {
+    flex-direction: column-reverse;
+}
+body{
+    background-color: rebeccapurple;
+}
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+  
+.flex-item {
+    background-color: transparent;
+    width: 20%;
+    height: auto;
+    line-height: 40px;
+    color: yellow;
+    text-align: center;
+    align-self: baseline;
+    font-family: 'Amatic SC', cursive;
+
+}
+.strike {
+    text-decoration: line-through;
+}
+
+img {
+      height: 250px;
+      width: 250px;
+}
+
+.flex-container1 {
+        flex-direction: column-reverse;
+}
+
+ul {
+      list-style: none;
+      font-family: 'Amatic SC', cursive;
+
+}
+
+li {
+        font-size: 20px
+}
+
+.btn {
+    font-size: 15px;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 8px;
+}  
+#burgerName {
+       background-color: yellow;
+}
+h1{
+    color: yellow;
+    font-family: 'Amatic SC', cursive;
+    font-size: 46px;
+    text-align: center;
+
+}
