@@ -57,8 +57,9 @@ li {
 }  
 .btn:hover {
     background: chartreuse;
-    color: rgb(151, 3, 151);
+    color: rgb(196, 0, 0);
     font-weight: bold;
+    transform: scale(1.1);
 }
 #burgerName {
        background-color: yellow;
@@ -69,4 +70,11 @@ h1{
     font-size: 46px;
     text-align: center;
 
+}
+.what {
+    font-size: 24px;
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px  rgb(196, 0, 0);
 }

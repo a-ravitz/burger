@@ -1,5 +1,5 @@
 <div class="parent">
-  <h1>Eat-Da-Burger</h1>
+  <h1 class="shadow">Eat-Da-Burger</h1>
 <div class="flex-container"></div>
 
   <div class="flex-container">
@@ -7,7 +7,7 @@
     {{#each burgers}}
     {{#unless devoured}}
   	<li>
-<span class="label"><b>Burger Name:</b>  {{this.burger_name}} </span>
+<span class="label "><b>Burger Name:</b>  {{this.burger_name}} </span>
       <button class="devour btn" data-id={{this.id}}>Devour</button>
   	</li>
     {{/unless}}
@@ -20,7 +20,7 @@
         <img src="pictures/burger.png">
       </div>
       <div class ="flex-column">
-            <b>Create a new burger</b>
+            <b class="what shadow">Create a new burger</b>
             <div class="input-wrapper">
               <input type="text" id="burgerName">
               <button id="burgerButton" class="btn">Submit</button>
