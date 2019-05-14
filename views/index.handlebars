@@ -1,39 +1,41 @@
 <div class="parent">
-  <h1 class="shadow">Eat-Da-Burger</h1>
-<div class="flex-container"></div>
+  
+<div class="flex-container"><h1 class="shadow-red">Eat-Da-Burger</h1></div>
 
   <div class="flex-container">
-<ul class="flex-item">
+<ul class="flex-item width">
     {{#each burgers}}
     {{#unless devoured}}
   	<li>
-<span class="label "><b>Burger Name:</b>  {{this.burger_name}} </span>
+<span class="label shadow-blue"><b>Burger Name:</b></span><span>  {{this.burger_name}} </span>
       <button class="devour btn" data-id={{this.id}}>Devour</button>
   	</li>
     {{/unless}}
   {{/each}}
 
   </ul>
-  <div class="flex-item">
+  <div class="flex-item width">
     <div class="flex-container1">
       <div class ="flex-column">
         <img src="pictures/burger.png"><br>
-        <a href="https://github.com/a-ravitz/burger"><img src="pictures/github-logo.png" class="small"></a>
+        
       </div>
-      <div class ="flex-column">
-            <b class="what shadow">Create a new burger</b>
+      <div class ="flex-item">
+            <b class="what shadow-red">Create a new burger</b>
             <div class="input-wrapper">
               <input type="text" id="burgerName">
               <button id="burgerButton" class="btn">Submit</button>
             </div>
+      
       </div>
+      <div><a href="https://github.com/a-ravitz/burger" class="shadow-red"><img src="pictures/github-logo.png" class="small"></a></div>
     </div>
   </div>
-  <ul class="flex-item">
+  <ul class="flex-item width">
   {{#each burgers}}
     {{#if devoured}}
   	<li>
-      <span class="label"><b>Burger Name:</b>  </span><span class="strike">{{this.burger_name}}</span>  
+      <span class="label shadow-blue"><b>Burger Name:</b>  </span><span class="strike">{{this.burger_name}}</span>  
       <button class="delete btn" data-id={{this.id}}>Delete</button>
       <button class="purge btn" data-id={{this.id}}>Un-Devour</button>
   	</li>

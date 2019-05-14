@@ -17,7 +17,7 @@ body{
   
 .flex-item {    
     background-color: transparent;
-    width: 20%;
+    /* width: 20%; */
     height: auto;
     line-height: 40px;
     color: yellow;
@@ -25,6 +25,9 @@ body{
     align-self: baseline;
     font-family: 'Amatic SC', cursive;
 
+}
+.width {
+    width: 20%;
 }
 .strike {
     text-decoration: line-through;
@@ -46,7 +49,7 @@ ul {
 }
 
 li {
-        font-size: 20px
+    font-size: 20px
 }
 
 .btn {
@@ -62,7 +65,7 @@ li {
     transform: scale(1.1);
 }
 #burgerName {
-       background-color: yellow;
+    background-color: yellow;
 }
 h1{
     color: yellow;
@@ -75,10 +78,12 @@ h1{
     font-size: 24px;
 }
 
-.shadow {
+.shadow-red {
     text-shadow: 1px 1px 2px  rgb(196, 0, 0);
 }
-
+.shadow-blue {
+    text-shadow: 1px 1px 2px  blue;
+}
 .small {
     height: 15px;
     width: 15px;
