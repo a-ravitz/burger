@@ -13,7 +13,7 @@ app.get("/", function(req, res) {
 });
 
 app.post("/api/burger", function(req, res) {
-    // console.log(req.body)
+    console.log(req.body)
     burger.insertOne(req.body.name, function(data) {
         console.log("in insertOne")
         res.json(data)
