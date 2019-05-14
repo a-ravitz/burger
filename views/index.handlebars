@@ -7,7 +7,7 @@
     {{#each burgers}}
     {{#unless devoured}}
   	<li>
-<span class="label shadow-blue"><b>Burger Name:</b></span><span>  {{this.burger_name}} </span>
+<span class="label shadow-blue-red"><b>Burger Name:</b></span><span class="shadow-blue-red">  {{this.burger_name}}</span>
       <button class="devour btn" data-id={{this.id}}>Devour</button>
   	</li>
     {{/unless}}
@@ -35,7 +35,7 @@
   {{#each burgers}}
     {{#if devoured}}
   	<li>
-      <span class="label shadow-blue"><b>Burger Name:</b>  </span><span class="strike">{{this.burger_name}}</span>  
+      <span class="label shadow-blue-red"><b>Burger Name:</b>  </span><span class="strike shadow-blue-red">{{this.burger_name}} </span>  
       <button class="delete btn" data-id={{this.id}}>Delete</button>
       <button class="purge btn" data-id={{this.id}}>Un-Devour</button>
   	</li>
